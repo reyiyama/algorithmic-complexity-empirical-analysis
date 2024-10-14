@@ -30,12 +30,11 @@ We conducted rigorous empirical evaluations to compare the performance of the th
 #### 3. **Graphical Analysis and Empirical Results**
 Graphical analysis provided a comprehensive visualization of the performance differences among the three data structures. 
 
-The bar graph illustrates the runtime performances of different data structures across three distinct file sizes and corresponding word counts.
-
+The **Bar Graph** illustrates the runtime performances of different data structures across three distinct file sizes and corresponding word counts.
 <img width="701" alt="Screenshot 2024-10-14 at 8 25 39 PM" src="https://github.com/user-attachments/assets/7349c2df-8a89-46da-bd1a-0e15d7d39231">
 
-The line graph sheds light on runtime behavior as both file sizes and word counts increase.
 
+The **Line Graph** sheds light on runtime behavior as both file sizes and word counts increase.
 <img width="1395" alt="Screenshot 2024-10-14 at 8 26 47 PM" src="https://github.com/user-attachments/assets/d840b6ef-cb2e-42a8-8d17-49da4e6120f1">
 
 Specifically what we found was:
