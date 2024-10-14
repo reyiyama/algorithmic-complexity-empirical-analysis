@@ -30,6 +30,7 @@ We conducted rigorous empirical evaluations to compare the performance of the th
 Graphical analysis provided a comprehensive visualization of the performance differences among the three data structures.
 
 The **Bar Graph** illustrates the runtime performances of different data structures across three distinct file sizes and corresponding word counts.
+
 <img width="701" alt="Screenshot 2024-10-14 at 8 25 39 PM" src="https://github.com/user-attachments/assets/7349c2df-8a89-46da-bd1a-0e15d7d39231">
 
 - **SampleDataToy.txt (202 Bytes, 20 words)**: The runtime variations among Trie, Array, and LinkedList are negligible—all clocking in under a millisecond. Trie takes slightly longer due to its tree traversal, but the difference is not significant.
