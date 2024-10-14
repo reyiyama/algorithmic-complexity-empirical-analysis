@@ -1,0 +1,1 @@
+dictionary_test_script.py [-v] <code directory> <name of implementation to test> <input data file> <list of test command files>
