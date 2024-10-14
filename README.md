@@ -2,7 +2,7 @@
 
 ### Contributors
 - Amay Viswanathan Iyer (s3970066)
-- Nga Phuong (s3757362)
+- Tu Nga Phuong (s3757362)
 
 ### Overview
 This project aimed to implement a dictionary capable of supporting operations such as **Add**, **Search**, **Delete**, and **Autocomplete**. The project employed three different data structures: **Array**, **Linked List**, and **Trie**. This comprehensive implementation enabled us to assess the computational efficiencies and operational nuances of each data structure, particularly in the context of space and time complexities.
