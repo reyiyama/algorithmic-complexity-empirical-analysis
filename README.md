@@ -19,7 +19,6 @@ We successfully implemented the dictionary using three different data structures
 
 Each implementation provided a different level of efficiency and trade-offs, allowing us to explore the distinct advantages and drawbacks of each data structure in handling various dictionary operations.
 
-
 #### 2. **Performance Evaluation and Analysis**
 We conducted rigorous empirical evaluations to compare the performance of the three dictionary types. The key findings were:
 
@@ -28,18 +27,20 @@ We conducted rigorous empirical evaluations to compare the performance of the th
 - **Trie Dictionary**: The **Trie** structure provided efficient handling of **search** and **insertion** operations, with a time complexity of **O(n)** where **n** is the length of the word being processed. Unlike arrays and linked lists, **Tries** leveraged prefix-based efficiency, especially for **autocomplete** operations, significantly outperforming the other structures in terms of speed and consistency.
 
 #### 3. **Graphical Analysis and Empirical Results**
-Graphical analysis provided a comprehensive visualization of the performance differences among the three data structures. 
+Graphical analysis provided a comprehensive visualization of the performance differences among the three data structures.
 
 The **Bar Graph** illustrates the runtime performances of different data structures across three distinct file sizes and corresponding word counts.
 <img width="701" alt="Screenshot 2024-10-14 at 8 25 39 PM" src="https://github.com/user-attachments/assets/7349c2df-8a89-46da-bd1a-0e15d7d39231">
 
+- **SampleDataToy.txt (202 Bytes, 20 words)**: The runtime variations among Trie, Array, and LinkedList are negligible—all clocking in under a millisecond. Trie takes slightly longer due to its tree traversal, but the difference is not significant.
+- **SampleData.txt (83,000 Bytes, 5,000 words)**: Trie impresses with a runtime of merely 0.0285 seconds, while Array and LinkedList lag significantly, registering 1.1449 and 1.356 seconds respectively. Trie's efficient prefix-based search contributes to its performance advantage.
+- **SampleData200k.txt (3,400,000 Bytes, 200,000 words)**: Trie remains efficient at 1.3945 seconds, while Array's runtime skyrockets to 4708.3452 seconds, nearly 3375 times longer than Trie. LinkedList, although faster than Array, clocks in at 2335.8265 seconds, approximately 1675 times longer than Trie. The results clearly show the scalability of the Trie data structure as dataset size increases.
 
 The **Line Graph** sheds light on runtime behavior as both file sizes and word counts increase.
 <img width="1395" alt="Screenshot 2024-10-14 at 8 26 47 PM" src="https://github.com/user-attachments/assets/d840b6ef-cb2e-42a8-8d17-49da4e6120f1">
 
-Specifically what we found was:
-- **Trie dictionaries** were significantly faster in **autocomplete** tasks across all dataset sizes, demonstrating exceptional scalability. For large datasets with 200,000 words, Tries maintained efficiency while Arrays and Linked Lists showed exponential growth in runtime.
-- **Array and Linked List dictionaries** had similar performance profiles for smaller datasets but diverged substantially as dataset sizes increased, with Linked Lists maintaining a smaller time overhead compared to Arrays due to avoiding extensive reordering during insertions.
+- **Trie Dictionary**: The performance trajectory of Trie exhibits a gentle incline, suggesting a near-linear relation with the logarithm of both file size and word count. This underscores its adaptability and efficiency across datasets, making it highly scalable for large-scale applications.
+- **Array and Linked List Dictionaries**: Both Array and LinkedList show an exponential runtime surge as file sizes and word counts increase. The LinkedList consistently outperforms the Array due to its ability to avoid extensive element reordering. However, it still lags significantly behind Trie, especially in autocomplete and search operations, demonstrating the inherent limitations of these data structures when dealing with large volumes of data.
 
 ### Space-Time Complexity and Efficiency
 
@@ -55,7 +56,7 @@ Specifically what we found was:
 
 The project aimed to explore how these data structures handle typical operations like **Add**, **Search**, **Delete**, and **Autocomplete** in a dictionary application and to evaluate their space and time complexities for different dataset sizes.
 
-Our findings (as detailed in the report [70†source]) indicate that the **Trie dictionary** consistently outperformed other data structures in terms of **autocomplete** operations due to its prefix-based nature. The **Array dictionary** struggled with large-scale data manipulation due to costly **insertions** and **deletions**, whereas the **Linked List** provided more flexibility but was still hampered by linear search times.
+Our findings (as detailed in the report) indicate that the **Trie dictionary** consistently outperformed other data structures in terms of **autocomplete** operations due to its prefix-based nature. The **Array dictionary** struggled with large-scale data manipulation due to costly **insertions** and **deletions**, whereas the **Linked List** provided more flexibility but was still hampered by linear search times.
 
 ### Importance of the Project and Industrial Application
 This project offers significant insight into data structures and their respective efficiencies in managing real-world problems such as **autocomplete**. Such a feature is prevalent in applications like search engines, code editors, and email clients, underscoring its importance in user experience and efficiency.
